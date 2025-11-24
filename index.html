@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Klik en Klets speeddate ronde</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      background-color: #fff9f0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #c0392b;
+    }
+    .card {
+      width: 100%;
+      max-width: 700px;
+      min-height: 200px;
+      border-radius: 16px;
+      padding: 24px;
+      background-color: #c0392b;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #d35400;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>De Klik en Klets speeddate ronde</h1>
+  <div id="card" class="card">Klik op de knop voor een vraag...</div>
+  <button onclick="generateCard()">Volgende vraag</button>
+  <script>
+    const questions = [
+      "Wat is een overtuiging of waarde die je belangrijk vindt in het leven?",
+      "Wat is een uitdaging waar je recent doorheen bent gegaan en wat heeft het je geleerd?",
+      "Welke kleine gewoonte draagt volgens jou het meest bij aan je welzijn?",
+      "Wat inspireert of motiveert jou in het dagelijks leven?",
+      "Welke eigenschap waardeer je het meest in anderen?",
+      "Wat vind jij het leukste aan samenwerken in een team?",
+      "Welk soort feedback helpt jou het meest om te groeien?",
+      "Wat is een talent of kwaliteit die jij meebrengt naar een team?",
+      "Welke vaardigheid zou je willen ontwikkelen om je werk nog leuker of effectiever te maken?",
+      "Stel je voor: je toekomstige zelf (over 10 jaar) geeft je één advies. Wat denk je dat het zou zijn?",
+      "Wat is een thema of onderwerp waar je je graag nog verder in zou willen verdiepen?",
+      "Wat vind je belangrijk om over jou te weten als collega?",
+      "Wat is je favoriete manier om je weekend door te brengen?",
+      "Heb je een guilty pleasure, zoals een tv-show of muziek die je stiekem leuk vindt?",
+      "Wat is je favoriete vakantiebestemming en waarom?",
+      "Wat was je eerste baan en wat heb je daar geleerd?",
+      "Wat is je favoriete seizoen van het jaar en waarom?",
+      "Heb je een hobby die je graag deelt met anderen?",
+      "Wat is een boek of film die je onlangs hebt gezien en die je zou aanraden?",
+      "Wat is je favoriete gerecht om zelf te koken of te eten?",
+      "Als je één superkracht kon kiezen, welke zou dat dan zijn?",
+      "Wat zou je doen als je een week lang vrij had en geen verplichtingen had?",
+      "Waar ben je het meest trots op in je leven tot nu toe?",
+      "Als je de loterij zou winnen, wat is het eerste wat je zou doen?",
+      "Wat is het meest avontuurlijke dat je ooit hebt gedaan?",
+      "Als je een ander beroep zou kunnen kiezen, wat zou dat dan zijn?",
+      "Wat is de mooiste plek die je ooit hebt bezocht?",
+      "Wat is je favoriete manier om te ontspannen na een drukke werkdag?",
+      "Als je een jaar in het buitenland zou kunnen wonen, waar zou dat zijn?",
+      "Wat is je favoriete feestdag en waarom?",
+      "Wat doe je het liefst in je vrije tijd, behalve werken?",
+      "Wat zou je als eerste doen als je een dag 'onzichtbaar' zou zijn?",
+      "Wat is een klein ding dat je altijd gelukkig maakt?",
+      "Wat is je favoriete manier om met stress om te gaan?",
+      "Wat is iets waar je graag beter in zou willen worden?"
+    ];
+    function generateCard() {
+      const card = document.getElementById("card");
+      const random = questions[Math.floor(Math.random() * questions.length)];
+      card.textContent = random;
+    }
+  </script>
+</body>
+</html>
